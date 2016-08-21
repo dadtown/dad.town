@@ -1,0 +1,25 @@
+{
+  "name": "dadtown",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-view": "0.0.1",
+    "bulma": "^0.1.2",
+    "pace": "0.0.4",
+    "pace-progress": "^1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "browserify-css": "^0.9.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-uglify": "^2.0.0",
+    "merge-stream": "^1.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "author": "widd"
+}
