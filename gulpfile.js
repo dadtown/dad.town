@@ -11,6 +11,7 @@ const uglify = require('gulp-uglify');
 const clean = require('gulp-clean');
 const merge = require('merge-stream');
 const concat = require('gulp-concat');
+const cleanCSS = require('gulp-clean-css');
 
 // --- Tasks
 // - Default task. Will start dev server, watch for changes, and build them on the fly
@@ -49,6 +50,7 @@ gulp.task('build-css', () => {
         gulp.src('css/**/*.css')
     ])
         .pipe(concat('app.css'))
+        .pipe(cleanCSS())
         .pipe(gulp.dest(buildDir+'/css'));
 });
 
