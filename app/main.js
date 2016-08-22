@@ -2,7 +2,6 @@ var angular = require('angular');
 // Explicitly require for browserify to include angular modules
 require('angular-route');
 require('./routes/home');
-require('./routes/rules');
 require('./routes/irc');
 require('./routes/services');
 
@@ -22,7 +21,6 @@ require('pace-progress/pace.min');
 var app = angular.module('dadtown', [
     'ngRoute',
     'dadtown.home',
-    'dadtown.rules',
     'dadtown.irc',
     'dadtown.services'
 ]);
