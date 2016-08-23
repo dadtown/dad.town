@@ -6,6 +6,7 @@
     "angular-route": "^1.5.8",
     "angular-view": "0.0.1",
     "bulma": "^0.1.2",
+    "font-awesome": "^4.6.3",
     "pace": "0.0.4",
     "pace-progress": "^1.0.2"
   },

@@ -47,6 +47,7 @@ gulp.task('build-css', () => {
     return merge([
         gulp.src('node_modules/bulma/css/bulma.css'),
         gulp.src('node_modules/pace-progress/themes/red/pace-theme-minimal.css'),
+        gulp.src('node_modules/font-awesome/css/font-awesome.min.css'),
         gulp.src('css/**/*.css')
     ])
         .pipe(concat('app.css'))
@@ -62,7 +63,17 @@ gulp.task('copy-templates', () => {
 
 // - Copy assets to desired locations (images, files, etc)
 gulp.task('copy-assets', () => {
-    return gulp.src('assets/**/*.*')
+    return merge([
+        gulp.src([
+            'node_modules/font-awesome/**/*.otf',
+            'node_modules/font-awesome/**/*.eot',
+            'node_modules/font-awesome/**/*.svg',
+            'node_modules/font-awesome/**/*.ttf',
+            'node_modules/font-awesome/**/*.woff',
+            'node_modules/font-awesome/**/*.woff2'
+        ]),
+        gulp.src('assets/**/*.*'),
+    ])
         .pipe(gulp.dest(buildDir));
 });
 
