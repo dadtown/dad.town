@@ -4,6 +4,7 @@ require('angular-route');
 require('./routes/home');
 require('./routes/irc');
 require('./routes/services');
+require('./routes/about');
 
 // OTHER SHIT
 window.paceOptions = {
@@ -22,7 +23,8 @@ var app = angular.module('dadtown', [
     'ngRoute',
     'dadtown.home',
     'dadtown.irc',
-    'dadtown.services'
+    'dadtown.services',
+    'dadtown.about'
 ]);
 
 app.config(['$routeProvider', function($routeProvider) {
